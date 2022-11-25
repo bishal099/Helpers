@@ -1,11 +1,4 @@
-//preventSpecialCharactersJS
-nameKeydown(e) {
-  if (/^[!@#\$%\^&*\)\(+=._-]+$/g.test(e.key)) {
-    e.preventDefault();
-  }
-},
-  
-  //dynamicObjAssignVue
+    //dynamicObjAssignVue
   Object.assign(dynamicObject, {
         [imageFileName]: event.target.files[0],
       })
