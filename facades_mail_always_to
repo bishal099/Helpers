@@ -1,1 +1,11 @@
+use Illuminate\Support\Facades\Mail;
 
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
+        if (!app()->isProduction()) {
+            Mail::alwaysTo('hello@email.com');
+        }
+    }
+}
