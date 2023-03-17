@@ -1,18 +1,22 @@
 sudo apt-get update
 sudo apt-get install postgresql postgresql-contrib
 
-
 sudo systemctl status postgresql
-
 
 sudo su postgres
 psql
-
 
 CREATE USER username WITH PASSWORD 'password';
 CREATE DATABASE databasename;
 GRANT ALL PRIVILEGES ON DATABASE databasename TO username;
 
+#List all databases:
+\l
 
+#Exit the PostgreSQL CLI:
 \q
-exit
+
+
+
+
+
