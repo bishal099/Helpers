@@ -1,0 +1,15 @@
+#npm
+npm run start:dev
+npm run start:prod
+
+npm install -g @nestjs/cli
+
+nest g module moduleName
+nest g module user
+
+#crud generate
+nest g resource
+nest g resource users
+
+
+
